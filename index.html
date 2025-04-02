@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narmathashree T | Portfolio</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #ff69b4, #8a2be2);
+        color: white;
+        text-align: center;
+      }
+
+      /* Header */
+      header {
+        padding: 50px 20px;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      header h1 {
+        font-size: 36px;
+        animation: fadeIn 2s ease-in-out;
+      }
+      header p {
+        font-size: 20px;
+        margin-top: 10px;
+        opacity: 0.8;
+      }
+
+      /* Navigation */
+      nav {
+        background: #111;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+      }
+      nav ul li a:hover {
+        color: #ffcc00;
+      }
+
+      /* Sections */
+      section {
+        padding: 60px 20px;
+        max-width: 900px;
+        margin: 40px auto;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+      }
+      section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #ffcc00;
+      }
+
+      /* About */
+      #about p {
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: justify;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      /* Education */
+      .education-item {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Skills */
+      .skill-container {
+        text-align: left;
+        margin: 20px auto;
+        max-width: 700px;
+      }
+      .skill-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .skill-bar {
+        background: #fff;
+        height: 10px;
+        border-radius: 5px;
+        margin: 8px 0;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      }
+      .skill-progress {
+        height: 100%;
+        background: #ffcc00;
+        transition: width 1s ease-in-out;
+      }
+
+      /* Projects */
+      .project {
+        background: white;
+        color: black;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s;
+      }
+      .project:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Resume */
+      .resume-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #ffcc00;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+      .resume-btn:hover {
+        background: #e6b800;
+      }
+
+      /* Contact Form */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        margin: auto;
+      }
+      input,
+      textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+      }
+      button {
+        background: #ffcc00;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #e6b800;
+      }
+
+      /* Footer */
+      footer {
+        padding: 20px;
+        background: #111;
+        color: white;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Narmathashree T</h1>
+      <p>Front-End Developer</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Passionate front-end web developer with a strong foundation in HTML,
+        CSS, and JavaScript. I specialize in building responsive, user-friendly,
+        and visually appealing web applications. Constantly learning and
+        exploring new technologies to enhance my skills and bring innovative
+        ideas to life.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>KG College of Arts and Science</h3>
+        <p>B.Sc. Computer Technology (2023 - 2026)</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skill-container">
+        <div class="skill-title">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 100%"></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 95%"></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">JavaScript</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%"></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">Python</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 87%"></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">Java</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 82%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">Digital Portfolio</div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="Resume/Resume.jpg" class="resume-btn" download>Download CV</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Narmathashree | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
